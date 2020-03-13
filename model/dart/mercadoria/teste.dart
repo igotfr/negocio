@@ -60,7 +60,7 @@ main()
         produto: Produto
         (
           codigo: 67,
-          nome: "caneta",
+          nome: "goiaba",
           precoVenda: 5,
           desconto: 0.5
         )

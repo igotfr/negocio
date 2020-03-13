@@ -1,0 +1,85 @@
+Backend
+
+1 Serviço autenticação do cliente
+2 Serviço autenticação administrador
+3 Serviço autenticação motorista (com código compartilhado)
+4 Serviço saldo (real time)
+5 Serviço consulta último pagamento cliente
+6 Serviço avaliação (aplicativo)
+7 Serviço listar recarga cliente (do cartão do app)
+8 Serviço detalhes da recarga
+9 Serviço gerar Qr-code para cartão (confecção de cartão)
+10 Serviço pagamento recarga (Boleto) / Notificar Adm Push
+11 Serviço Lista Pagamentos
+12 Serviço Detalhes pagamento
+13 Serviço Pagamento recarga (cartão)
+14 Serviço Atualizar cadastro cliente
+15 Serviço Validar Pagamento (Qr code)
+16 Serviço Dados Saldo Motorista (real time) (período)
+17 Serviço consulta avaliação Motorista/Patrão
+18 Serviço receber pagamento motorista
+19 Serviço Listar Pagamentos Realizado (Período)
+20 Serviço atualizar cadastro do motorista
+21 Serviço Saldo Geral Administrador (Período)
+22 Serviço mudar status de pagamento (Administrador)
+23 Serviço Pesquisar Cliente (Administrador)
+24 Serviço Atualizar Saldo do Cliente (Administrador)
+25 Serviço Pesquisar Motorista
+26 Serviço atualizar dados motorista
+27 Serviço Listar Clientes
+28 Serviço Listar Motoristas
+29 Serviço Gerar código patrão de compartilhamento
+30 Serviço Listar Usuários Sistemas
+31 Serviço Atualizar Perfil Usuário
+32 Serviço Cadastrar Perfil
+33 Serviço Cadastrar Usuário
+34 Serviço Recarregar Cartão
+35 Serviço de leitura das catracas eletrônicas
+
+Cliente
+36 Criação de layout
+37 Tela de login
+38 Tela Inicial (Home)
+39 Tela de Pagamento
+40 Tela de Listar Recarga
+41 Tela Detalhes de Recargas
+42 Tela da minha Conta
+43 Tela lista pagamento
+44 Tela detalhes de pagamentos
+45 Tela pagamento recarga
+46 Tela alterar dados
+47 Tela de Recarga dos cartões
+48 Serviço de chamadas API/backend
+49 Serviço de pagamento cartão API
+50 Serviço de senha na digital / senha encriptografada
+
+Motorista
+51 Criação de layout
+52 Tela de login
+53 Tela de inicial
+54 Tela de ver pagamentos
+55 Tela histórico de pagamento
+56 Tela detalhes de pagamento
+57 Tela de atualizar dados
+58 Serviço de chamadas API/backend
+
+Administrador
+59 Criação de layout
+60 Tela de login
+61 Tela Inicial
+62 Tela de Lista de pagamentos
+63 Detalhes do pagamento
+64 Tela de Lista de Clientes
+65 Detalhes do Cliente
+66 Tela de Listar Usuários
+67 Detalhes do usuário
+68 Tela atualizar dados do usuário / SALDO
+69 Tela atualizar dados do motorista
+70 Tela Cadastrar motorista
+71 Tela Cadastrar usuário
+72 Tela alterar dados do usuário
+73 Tela Cadastrar perfil
+74 Tela Atualiza Perfil
+75 Tela gerar Cartão
+76 Tela de Configuração
+77 Serviço de chamadas API/backend

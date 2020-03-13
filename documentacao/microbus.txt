@@ -1,0 +1,9 @@
+TELA principal:
+
+3 OPÇÕES (ícones) na parte inferior da tela:
+
+	1 para acesso público (informações qe qualqer pessoa possa ver)
+
+	1 para cadastro como usuário do sistema (cliente, motorista, administrador)
+
+	1 para login

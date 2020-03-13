@@ -1,0 +1,4 @@
+name: "pacote"
+
+dependencies:
+  meta: ^1.1.8

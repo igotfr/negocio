@@ -1,4 +1,4 @@
-import "./Pessoa.dart";
+import "../Pessoa.dart";
 
 class Cliente extends Pessoa
 {
