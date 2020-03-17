@@ -1,0 +1,37 @@
+TELA principal: 3 OPÇÕES (ícones) na parte inferior da tela
+
+	1 Acesso Público (informações qe qualqer pessoa possa ver). Pode ou não ser implementada dependendo da regra de negócio
+
+	2 Cadastrar Usuário
+		§ Campos necessários:
+			- username
+			- senha
+
+		§ Campos sugeridos dependentes da regra de negócio:
+			- nome
+			- email (possibilidade da opção logar com email, não necessitando de username e senha)
+			- cpf
+			- telefone
+			- endereço
+			- sexo
+
+		§ Tipos de Usuário qe podem ser cadastrados na tela inicial
+			- passageiro (certeza)
+			- motorista (averiguar regra de negócio)
+
+			-| os ADMs Masters serão inseridos via código no banco de dados e suas permissões serão dadas conforme autorizado
+			  ADMs Masters poderão cadastrar outros ADMs definindo suas permissões ou grupo de permissões
+			  ADMs Masters ou ADMs Comuns cadastrarem passageiros e motoristas será averiguado na regra de negócio
+
+			-| outra opção para cadastrar ADMs comuns será um código gerado e reconhecido pelo sistema
+			   O código será gerado aleatoriamente de acordo com uma função matemática e terá um período de validade
+			   Para se cadastrar como ADM, a pessoa precisa inserir o código no campo correspondente no aplicativo
+
+	3 Login
+		§ Campos:
+			- username
+			- senha
+			- logar com Google, Facebook ou outro
+
+		Usuários qe podem se logar a partir dessa tela inicial: qualqer um, de qualqer tipo
+	
