@@ -3,17 +3,29 @@ TELA principal: 3 OPÇÕES (ícones) na parte inferior da tela
 	1 Acesso Público (informações qe qualqer pessoa possa ver). Pode ou não ser implementada dependendo da regra de negócio
 
 	2 Cadastrar Usuário
-		§ Campos necessários:
+		§ Inputs necessários:
 			- username
-			- senha
+				1ª opção: criado na hora, caso já exista, o aplicativo fornecerá sugestões de usernames disponíveis,
+				2ª opção: o aplicativo usará o email da API de email (Google, Facebook) como username, assim o usuário precisa digitar o email no campo username para login,
+				3ª opção: a autenticação será feita na API de email
 
-		§ Campos sugeridos dependentes da regra de negócio:
+			- senha
+				1 botão "olho" ao lado direito do campo senha: ao ser clicado revela a senha, ao ser clicado novamente a oculta
+				2 aviso de senha fraca-média-forte.
+				3 Sugestão de requisito máximo de segurança definido pelo aplicativo: mínimo 3 caracteres. A segurança da senha é de total responsabilidade do usuário.
+				4 Para administradores e motoristas pode ser definido no aplicativo, um reqisito de segurança baseado em comprovações de teste de segurança, como no arqivo seguranca_senha.jpg ou no site https://howsecureismypassword.net
+
+			- confirmar senha
+
+		§ Inputs sugeridos dependentes da regra de negócio:
 			- nome
-			- email (possibilidade da opção logar com email, não necessitando de username e senha)
+			- email (possibilidade da opção logar com email)
 			- cpf
-			- telefone
-			- endereço
+			- data de nascimento
+			- telefone: DDD fica entre parênteses autocompletáveis e não apagáveis (transparente)
+			- endereço: input para digitação qe reconhece CEP e letras
 			- sexo
+			- alguns dos campos podem ser obtidos do email
 
 		§ Tipos de Usuário qe podem ser cadastrados na tela inicial
 			- passageiro (certeza)
@@ -28,10 +40,67 @@ TELA principal: 3 OPÇÕES (ícones) na parte inferior da tela
 			   Para se cadastrar como ADM, a pessoa precisa inserir o código no campo correspondente no aplicativo
 
 	3 Login
-		§ Campos:
+		§ Inputs:
 			- username
+				1ª opção: criado na hora, caso já exista, o aplicativo fornecerá sugestões de usernames disponíveis,
+				2ª opção: o aplicativo usará o email da API de email (Google, Facebook) como username, assim o usuário precisa digitar o email no campo username para login,
+				3ª opção: a autenticação será feita na API de email
+
 			- senha
-			- logar com Google, Facebook ou outro
+				1 botão "olho" ao lado direito do campo senha: ao ser clicado revela a senha, ao ser clicado novamente a oculta
+				2 aviso de senha fraca-média-forte.
+				3 Sugestão de requisito máximo de segurança definido pelo aplicativo: mínimo 3 caracteres. A segurança da senha é de total responsabilidade do usuário.
+				4 Para administradores e motoristas pode ser definido no aplicativo, um reqisito de segurança baseado em comprovações de teste de segurança, como no arqivo seguranca_senha.jpg ou no site https://howsecureismypassword.net
+
+			- esqeci meu email ou senha
+				1 esqeceu o email: ao ser clicado enviará um email com o link de redefinição de senha, ao clicar no link, o usuário será redirecionado para uma página solicitando a nova senha, redigitação da senha e o botão Mudar senha
+				2 esqeceu o email: busca 
 
 		Usuários qe podem se logar a partir dessa tela inicial: qualqer um, de qualqer tipo
-	
+
+###############################################################################################################################
+
+Tela 2 (após autenticação) PASSAGEIRO
+
+	OPÇÃO perfil
+		Localização: esqerda na tab superior
+		Ícone: possui foto e nome do usuário
+		Ação: ao ser clicado redireciona para a TELA de perfil
+		Tela:
+			Campos necessários:
+				foto do usuário: ao ser clicada expande a foto com OPÇÃO para alterar a foto
+				nome: com opção de alteração
+				voltar: volta para a TELA do passageiro
+
+			Campos sugeridos dependentes da regra de negócio:
+				cpf
+				data de nascimento
+				telefone: DDD fica entre parênteses autocompletáveis e não apagáveis (transparente)
+				endereço: input para digitação qe reconhece CEP e letras
+				sexo
+
+	OPÇÃO logout
+		Localização: direita na tab superior
+		Ícone: 
+		Ação: ao ser clicado redireciona para a TELA principal
+
+	OPÇÃO recarga:
+		Localização: esqerda na tab inferior
+		Ícone: 
+		Ação: ao ser clicado redireciona para a TELA recarga
+		Tela:
+			Campos:
+				saldo atual: mostrado na parte superior
+				realizar recarga: 
+
+	OPÇÃO pagamento de passagem:
+		Localização: esqerda na tab inferior
+		Ícone: 
+		Ação: ao ser clicado redireciona para a TELA pagamento de passagem
+		Tela:
+			Campos:
+				saldo atual: mostrado na parte superior
+				realizar recarga: 
+
+
+Tela 2 (após autenticação) ADMINISTRADOR
